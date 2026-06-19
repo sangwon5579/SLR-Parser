@@ -1,0 +1,92 @@
+accept
+CODE
+  FDECL
+    vtype  (line 1)
+    id  (line 1)
+    lparen  (line 1)
+    ARG
+      ε
+    rparen  (line 1)
+    lbrace  (line 1)
+    BLOCK
+      STMT
+        VDECL
+          vtype  (line 2)
+          ASSIGN
+            id  (line 2)
+            assign  (line 2)
+            RHS
+              literal  (line 2)
+          semi  (line 2)
+      BLOCK
+        STMT
+          VDECL
+            vtype  (line 3)
+            ASSIGN
+              id  (line 3)
+              assign  (line 3)
+              RHS
+                character  (line 3)
+            semi  (line 3)
+        BLOCK
+          STMT
+            VDECL
+              vtype  (line 4)
+              ASSIGN
+                id  (line 4)
+                assign  (line 4)
+                RHS
+                  boolstr  (line 4)
+              semi  (line 4)
+          BLOCK
+            STMT
+              while  (line 5)
+              lparen  (line 5)
+              COND
+                COND
+                  boolstr  (line 5)
+                comp  (line 5)
+                boolstr  (line 5)
+              rparen  (line 5)
+              lbrace  (line 5)
+              BLOCK
+                STMT
+                  ASSIGN
+                    id  (line 6)
+                    assign  (line 6)
+                    RHS
+                      EXPR
+                        TERM
+                          TERM
+                            FACTOR
+                              lparen  (line 6)
+                              EXPR
+                                EXPR
+                                  TERM
+                                    FACTOR
+                                      num  (line 6)
+                                addsub  (line 6)
+                                TERM
+                                  FACTOR
+                                    num  (line 6)
+                              rparen  (line 6)
+                          multdiv  (line 6)
+                          FACTOR
+                            id  (line 6)
+                  semi  (line 6)
+                BLOCK
+                  ε
+              rbrace  (line 7)
+            BLOCK
+              ε
+    RETURN
+      return  (line 8)
+      RHS
+        EXPR
+          TERM
+            FACTOR
+              id  (line 8)
+      semi  (line 8)
+    rbrace  (line 9)
+  CODE
+    ε

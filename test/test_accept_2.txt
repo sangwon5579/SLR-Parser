@@ -1,0 +1,7 @@
+vtype id lparen rparen lbrace
+  if lparen boolstr comp boolstr rparen lbrace
+    vtype id assign num addsub num multdiv num semi
+  rbrace else lbrace
+  rbrace
+  return id semi
+rbrace

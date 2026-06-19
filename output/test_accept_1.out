@@ -1,0 +1,8 @@
+accept
+CODE
+  VDECL
+    vtype  (line 1)
+    id  (line 1)
+    semi  (line 1)
+  CODE
+    ε

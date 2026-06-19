@@ -1,0 +1,65 @@
+accept
+CODE
+  FDECL
+    vtype  (line 1)
+    id  (line 1)
+    lparen  (line 1)
+    ARG
+      ε
+    rparen  (line 1)
+    lbrace  (line 1)
+    BLOCK
+      STMT
+        if  (line 2)
+        lparen  (line 2)
+        COND
+          COND
+            boolstr  (line 2)
+          comp  (line 2)
+          boolstr  (line 2)
+        rparen  (line 2)
+        lbrace  (line 2)
+        BLOCK
+          STMT
+            VDECL
+              vtype  (line 3)
+              ASSIGN
+                id  (line 3)
+                assign  (line 3)
+                RHS
+                  EXPR
+                    EXPR
+                      TERM
+                        FACTOR
+                          num  (line 3)
+                    addsub  (line 3)
+                    TERM
+                      TERM
+                        FACTOR
+                          num  (line 3)
+                      multdiv  (line 3)
+                      FACTOR
+                        num  (line 3)
+              semi  (line 3)
+          BLOCK
+            ε
+        rbrace  (line 4)
+        ELSE
+          else  (line 4)
+          lbrace  (line 4)
+          BLOCK
+            ε
+          rbrace  (line 5)
+      BLOCK
+        ε
+    RETURN
+      return  (line 6)
+      RHS
+        EXPR
+          TERM
+            FACTOR
+              id  (line 6)
+      semi  (line 6)
+    rbrace  (line 7)
+  CODE
+    ε

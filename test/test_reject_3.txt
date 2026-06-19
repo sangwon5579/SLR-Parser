@@ -1,0 +1,3 @@
+vtype id lparen rparen lbrace
+  vtype id semi
+rbrace

@@ -1,0 +1,9 @@
+vtype id lparen rparen lbrace
+  vtype id assign literal semi
+  vtype id assign character semi
+  vtype id assign boolstr semi
+  while lparen boolstr comp boolstr rparen lbrace
+    id assign lparen num addsub num rparen multdiv id semi
+  rbrace
+  return id semi
+rbrace

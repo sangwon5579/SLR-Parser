@@ -1,0 +1,63 @@
+accept
+CODE
+  CDECL
+    class  (line 1)
+    id  (line 1)
+    lbrace  (line 1)
+    ODECL
+      VDECL
+        vtype  (line 2)
+        id  (line 2)
+        semi  (line 2)
+      ODECL
+        VDECL
+          vtype  (line 3)
+          ASSIGN
+            id  (line 3)
+            assign  (line 3)
+            RHS
+              EXPR
+                EXPR
+                  TERM
+                    FACTOR
+                      num  (line 3)
+                addsub  (line 3)
+                TERM
+                  FACTOR
+                    num  (line 3)
+          semi  (line 3)
+        ODECL
+          FDECL
+            vtype  (line 4)
+            id  (line 4)
+            lparen  (line 4)
+            ARG
+              vtype  (line 4)
+              id  (line 4)
+              MOREARGS
+                comma  (line 4)
+                vtype  (line 4)
+                id  (line 4)
+                MOREARGS
+                  ε
+            rparen  (line 4)
+            lbrace  (line 4)
+            BLOCK
+              STMT
+                VDECL
+                  vtype  (line 5)
+                  id  (line 5)
+                  semi  (line 5)
+              BLOCK
+                ε
+            RETURN
+              return  (line 6)
+              RHS
+                boolstr  (line 6)
+              semi  (line 6)
+            rbrace  (line 7)
+          ODECL
+            ε
+    rbrace  (line 8)
+  CODE
+    ε
